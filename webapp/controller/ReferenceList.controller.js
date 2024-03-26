@@ -24,16 +24,16 @@ sap.ui.define(["./BaseController","sap/ui/model/Filter","sap/ui/model/FilterOper
             //get the data from the table
             const oBinding = oTable.getBinding("items");
             oBinding.filter(aFilter);
-            console.log("filtering")
-        }
-        /*onPressCustomer(oEvent){
+        },
+        onPressReference(oEvent){
             // oItem refers to the clikced line, e.g., one customer
             var oItem = oEvent.getSource();
-            this.getRouter().navTo("detail",{
-                customerId: oItem.getBindingContext().getPath().substring('/customers/'.length)
+            console.log(oItem.getBindingContext().getPath());
+
+            this.getRouter().navTo("literature",{
+                referenceId: oItem.getBindingContext().getPath().substring('/literature/'.length)
             })
             //this.getRouter().navTo("detail");
-
-        }*/
+        }
 	});
 });

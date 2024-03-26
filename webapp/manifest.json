@@ -72,12 +72,20 @@
 					"pattern": "",
 					"name": "main",
 					"target": "main"
+				},{
+					"pattern": "literature/{referenceId}",
+					"name": "literature",
+					"target": "literature"
 				}
 			],
 			"targets": {
 				"main": {
 					"viewId": "main",
 					"viewName": "Main"
+				},
+				"literature":{
+					"viewId": "literature",
+					"viewName": "Detail"
 				}
 			}
 		}

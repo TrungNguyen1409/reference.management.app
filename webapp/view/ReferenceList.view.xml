@@ -50,7 +50,7 @@
         </columns>
         <items>
             <!-- Represents one roew of the customers list -->
-            <ColumnListItem type="Navigation" press="">
+            <ColumnListItem type="Navigation" press=".onPressReference">
                 <cells>
                     <Text text="{title}" />
                     <Text text="{authors}" />

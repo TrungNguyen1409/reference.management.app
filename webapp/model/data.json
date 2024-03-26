@@ -1,6 +1,7 @@
 {
     "literature": [
       {
+        "id": 1,
         "type": "scientific_paper",
         "title": "Deep Learning Approaches for Natural Language Processing",
         "authors": ["John Doe", "Alice Smith"],
@@ -14,6 +15,7 @@
         "keywords": ["deep learning", "natural language processing", "sentiment analysis", "text classification", "machine translation"]
       },
       {
+        "id":2,
         "type": "book",
         "title": "Introduction to Machine Learning",
         "authors": ["Jane Miller"],
@@ -23,7 +25,8 @@
         "abstract": "This book provides a comprehensive introduction to machine learning algorithms and their applications in various domains.",
         "keywords": ["machine learning", "supervised learning", "unsupervised learning", "reinforcement learning"]
       },
-      {
+      { 
+        "id":3,
         "type": "article",
         "title": "The Impact of Climate Change on Biodiversity",
         "authors": ["David Brown", "Emily Johnson"],
