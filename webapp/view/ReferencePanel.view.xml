@@ -1,0 +1,92 @@
+<mvc:View
+    controllerName="reference.management.app.controller.ReferencePanel"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    <Panel
+        class="sapUiResponsiveMargin"
+        width="auto"
+        headerText="{i18n>referencePanelHeaderText}"
+        expandable="true"
+        expanded="true"
+    >
+        <content>
+            <f:SimpleForm>
+                <f:toolbar>
+                    <!-- Provide layout information -->
+                    <Toolbar>
+                        <content>
+                            <ToolbarSpacer />
+                            <Button
+                                text="{i18n>saveData}"
+                                press=".onSaveData"
+                            />
+                        </content>
+                    </Toolbar>
+                </f:toolbar>
+                <f:content>
+                    <core:Title text="Citation Details" />
+                    <Label text="{i18n>type}" />
+                    <Input
+                        value="{path: 'reference>/type'}"
+                        fieldGroupIds="myInputs"
+                    />
+                    <Label text="{i18n>title}" />
+                    <Input
+                        value="{reference>/title}"
+                        fieldGroupIds="myInputs"
+                    />
+                    <Label text="{i18n>authors}" />
+                    <Input
+                        value="{reference>/authors}"
+                        fieldGroupIds="myInputs"
+                    />
+                    <Label text="{i18n>publication_date}" />
+                    <Input
+                        value="{path: 'reference>/publication_date'}"
+                        fieldGroupIds="myInputs"
+                    />
+                    <Label text="{i18n>journal}" />
+                    <Input
+                        value="{reference>/journal}"
+                        fieldGroupIds="myInputs"
+                    />
+                    <Label text="{i18n>volume}" />
+                    <Input
+                        value="{reference>/volume}"
+                        fieldGroupIds="myInputs"
+                    />
+                    <Label text="{i18n>issue}" />
+                    <Input
+                        value="{reference>/issue}"
+                        fieldGroupIds="myInputs"
+                    />
+                    <Label text="{i18n>pages}" />
+                    <Input
+                        value="{reference>/pages}"
+                        fieldGroupIds="myInputs"
+                    />
+                    <Label text="{i18n>doi}" />
+                    <Input
+                        value="{reference>/doi}"
+                        fieldGroupIds="myInputs"
+                    />
+                    <core:Title text="Abstract and Key Words" />
+                    <Label text="{i18n>abstract}" />
+                    <Input
+                        value="{reference>/abstract}"
+                        fieldGroupIds="myInputs"
+                        
+                    />
+                    <Label text="{i18n>keywords}" />
+                    <Input
+                        value="{reference>/keywords}"
+                        fieldGroupIds="myInputs"
+                    />
+                </f:content>
+            </f:SimpleForm>
+        </content>
+    </Panel>
+</mvc:View>

@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+
+    <Dialog id="confirmDialog" title="{i18n>confirmDialog}">
+        <content>
+            <Text class="sapUiSmallMargin" text="{i18n>confirmText}"></Text>
+        </content>
+        <beginButton>
+            <Button type="Reject" text="{i18n>dialogClose}"  press=".onCloseDialog" icon="sap-icon://decline"/>
+        </beginButton>
+        <endButton>
+            <Button type="Accept" text="{i18n>dialogAccept}" press=".onAccept" icon="sap-icon://accept"/>
+        </endButton>
+    </Dialog>
+
+</core:FragmentDefinition>
