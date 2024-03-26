@@ -1,0 +1,62 @@
+<mvc:View
+    controllerName="reference.management.app.controller.ReferenceList"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    <Table
+        class="sapUiResponsiveMargin"
+        width="auto"
+        id="literature"
+        items="{
+            path: '/literature',
+            sorter:{path: 'type', group:true}
+            }"
+        growingThreshold="5"
+        growing="true"
+    >
+        <headerToolbar>
+            <Toolbar>
+                <Title text="{i18n>referenceListHeader}" />
+                <ToolbarSpacer />
+                <SearchField
+                    width="40%"
+                    search=".onFilterReference"
+                />
+            </Toolbar>
+        </headerToolbar>
+        <columns>
+            
+
+            <Column>
+                <header>
+                    <Text text="{i18n>title}" />
+                </header>
+            </Column>
+
+            <Column>
+                <header>
+                    <Text text="{i18n>authors}" />
+                </header>
+            </Column>
+
+            <Column>
+                <header>
+                    <Text text="{i18n>publication_date}" />
+                </header>
+            </Column>
+            
+        </columns>
+        <items>
+            <!-- Represents one roew of the customers list -->
+            <ColumnListItem type="Navigation" press="">
+                <cells>
+                    <Text text="{title}" />
+                    <Text text="{authors}" />
+                    <Text text="{publication_date}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</mvc:View>
