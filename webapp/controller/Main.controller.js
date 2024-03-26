@@ -7,7 +7,7 @@ sap.ui.define(["./BaseController", "sap/ui/model/json/JSONModel"], function (Bas
 				type: 'scientific_paper',
 				title: "Deep Learning Approaches for Natural Language Processing",
 				authors: ["John Doe", "Alice Smith"],
-				publication_date: 16,
+				publication_date: "2023-05-15",
 				journal:"Journal of Artificial Intelligence",
 				volume: 25,
 				issue: 2,

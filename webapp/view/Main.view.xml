@@ -15,7 +15,6 @@
         <content>
             <mvc:XMLView viewName="reference.management.app.view.ReferencePanel" />
 			<mvc:XMLView viewName="reference.management.app.view.ReferenceList" />
-
         </content>
     </Page>
 </mvc:View>
