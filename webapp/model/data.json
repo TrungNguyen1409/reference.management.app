@@ -1,0 +1,40 @@
+{
+    "literature": [
+      {
+        "type": "scientific_paper",
+        "title": "Deep Learning Approaches for Natural Language Processing",
+        "authors": ["John Doe", "Alice Smith"],
+        "publication_date": "2023-05-15",
+        "journal": "Journal of Artificial Intelligence",
+        "volume": 28,
+        "issue": 2,
+        "pages": "150-165",
+        "doi": "10.1234/jai.2023.123456",
+        "abstract": "This paper explores various deep learning techniques used in natural language processing tasks such as sentiment analysis, text classification, and machine translation.",
+        "keywords": ["deep learning", "natural language processing", "sentiment analysis", "text classification", "machine translation"]
+      },
+      {
+        "type": "book",
+        "title": "Introduction to Machine Learning",
+        "authors": ["Jane Miller"],
+        "publication_date": "2022-10-01",
+        "publisher": "Springer",
+        "isbn": "978-3-540-88888-8",
+        "abstract": "This book provides a comprehensive introduction to machine learning algorithms and their applications in various domains.",
+        "keywords": ["machine learning", "supervised learning", "unsupervised learning", "reinforcement learning"]
+      },
+      {
+        "type": "article",
+        "title": "The Impact of Climate Change on Biodiversity",
+        "authors": ["David Brown", "Emily Johnson"],
+        "publication_date": "2023-03-20",
+        "journal": "Environmental Science and Policy",
+        "volume": 15,
+        "issue": 3,
+        "pages": "300-315",
+        "doi": "10.5678/esp.2023.987654",
+        "abstract": "This article discusses the effects of climate change on biodiversity, including shifts in species distributions, loss of habitats, and extinction risks.",
+        "keywords": ["climate change", "biodiversity", "species distribution", "habitat loss", "extinction"]
+      }
+    ]
+  }
