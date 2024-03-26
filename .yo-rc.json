@@ -1,0 +1,17 @@
+{
+  "generator-ui5-app": {
+    "namespace": "reference.management.app",
+    "framework": "OpenUI5",
+    "frameworkVersion": "1.122.0",
+    "author": "trungnd1409",
+    "initrepo": true,
+    "appId": "reference.management.app",
+    "appURI": "reference/management/app",
+    "cdnDomain": "sdk.openui5.org",
+    "defaultTheme": "sap_horizon",
+    "qunitCoverageFile": "qunit-coverage-istanbul.js",
+    "gte1_98_0": true,
+    "gte1_104_0": true,
+    "setupCompleted": true
+  }
+}
