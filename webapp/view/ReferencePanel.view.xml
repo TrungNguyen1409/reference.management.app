@@ -29,10 +29,23 @@
                 <f:content>
                     <core:Title text="Citation Details" />
                     <Label text="{i18n>type}" />
-                    <Input
-                        value="{path: 'reference>/type'}"
+                    <ComboBox
+                        value="{path:'reference>/type', type: 'sap.ui.model.type.String', constraints: {minLength: 1}}"
                         fieldGroupIds="myInputs"
-                    />
+                    >
+                        <core:Item
+                            key="{article}"
+                            text="Article"
+                        />
+                        <core:Item
+                            key="{book}"
+                            text="Book"
+                        />
+                        <core:Item
+                            key="{scientific_paper}"
+                            text="Scientific Paper"
+                        />
+                    </ComboBox>
                     <Label text="{i18n>title}" />
                     <Input
                         value="{reference>/title}"
@@ -78,7 +91,6 @@
                     <Input
                         value="{reference>/abstract}"
                         fieldGroupIds="myInputs"
-                        
                     />
                     <Label text="{i18n>keywords}" />
                     <Input
